@@ -8,11 +8,12 @@ class Solution {
 
                 while(set.contains(nums[i])){
                     if(nums[left]== nums[i]){
-                        long diff = Math.abs(nums[left] -nums[i]);
-                         if(diff<k){
+                        long diff = Math.abs(left -i);
+                         if(diff<=k){
                              return true;
         }   
                     }
+                
                     else{
                         left++;
                     }
