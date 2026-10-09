@@ -5,3 +5,6 @@ FROM customer
 GROUP BY customer_id
 HAVING count(Distinct product_key) = (select count(*) from  product)
 order by customer_id;
+
+
+
